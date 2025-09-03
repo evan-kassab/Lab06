@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <!-- This is the header for the page -->
+    <header>
+        <h1>Welcome to My Web Portfolio</h1>
+    </header>
+
+    <!-- This is the navigation for each section -->
+    <nav>
+        <p>Learning HTML step-by-step</p>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#basics">Web Development Basics</a></li>
+            <li><a href="#code">Sample Code</a></li>
+            <li><a href="#schedule">Weekly Schedule</a></li>
+            <li><a href="#lab">Lab Details</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the main for the page -->
+    <main>
+
+    <!-- This is the About Me section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <figure>
+            <img src="https://img.freepik.com/premium-vector/print_1150217-428.jpg" alt="Cartoon Woman" width="200">
+            <figcaption>This is a figure element with an image and caption.</figcaption>
+        </figure>
+        <p>
+            I love web development!<br>
+            It allows me to build cool things with just code.<br>
+            HTML uses tags like &lt;div&gt; and &lt;section&gt; to organize content.
+        </p>
+    </section>
+
+    <!-- This is the Web Development Basics section -->
+    <section id="basics">
+        <h2>Web Development Basics</h2>
+        <p>HTML stands for HyperText Markup Language. It structures content using tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;img&gt;</code>.</p>
+    </section>
+
+    <!-- This is the Sample Code section -->
+    <section id="code">
+        <h2>Sample Code</h2>
+        <pre>
+function hello() {
+  console.log("Hello, world!");
+}
+        </pre>
+        <blockquote>
+            "Web development is like magic — except it's real and you can learn it."
+        </blockquote> 
+    </section>
+
+    <!-- This is the Weekly Schedule section (that includes the table)-->
+    <section id="schedule">
+        <h2>Weekly Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Lecture</td>
+                <td>10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Lab</td>
+                <td>2:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>Project Work</td>
+                <td>1:00 PM</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">&copy; 2025 Your Name - All rights reserved</td>
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+
+    <!-- This is the Lab Details section -->
+    <section id="lab">
+        <h2>Lab Details</h2>
+        <p>Lab sessions take place every Wednesday in EnGeo2203 at 2:00 PM. Attendance is required.</p>
+        <p>Made with &#10084; and HTML.</p>
+    </section>
+
+    <!-- This is the Contact Me section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <!-- Name -->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+
+            <!-- Email -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div><br>
+
+            <!-- Favorite Color -->
+            <div>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </div><br>
+
+            <!-- Birthday -->
+            <div>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div><br>
+
+            <!-- Radio Buttons -->
+            <div>
+                <legend>Are you enjoying this lab?</legend>
+                <label>
+                    <input type="radio" name="enjoying" value="yes" required>
+                    Yes
+                </label><br>
+                <label>
+                    <input type="radio" name="enjoying" value="no">
+                    No
+                </label>
+            </div><br>
+
+            <!-- Course Selection -->
+            <div>
+                <label for="course">Select your course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Select--</option>
+                    <option value="it301">IT301</option>
+                    <option value="it302">IT302</option>
+                    <option value="it333">IT333</option>
+                </select>
+            </div><br>
+
+            <!-- Feedback Textarea -->
+            <div>
+                <label for="feedback">Any Feedback?</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Type your message here..."></textarea>
+            </div><br>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    </main>
+
+    <!-- This is the footer for the page -->
+    <footer>
+        <p>&copy; 2025 Evan Kassab. All rights reserved.</p>
+        <p>Last updated: September 1, 2025</p>
+    </footer>
+
+</body>
+</html>
